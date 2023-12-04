@@ -9,9 +9,23 @@ let books = reactive([
     id: 1,
     title: "O velho e o mar",
     cover: "https://m.media-amazon.com/images/I/419Jl7oflOL._SY445_SX342_.jpg", 
-    alreadyRead: true,
+    alreadyRead: false,
     author: "Ernest Hemingway",
-  } 
+  },
+  {
+    id: 2,
+    title: "A morte de Ivan Ilitch",
+    cover: "https://m.media-amazon.com/images/I/51B3mmYZPrL._AC_UF1000,1000_QL80_.jpg", 
+    alreadyRead: true,
+    author: "Leon Tolstói",
+  },
+  {
+    id: 3,
+    title: "It: A coisa",
+    cover: "https://m.media-amazon.com/images/I/51z0s3GcvwL.jpg", 
+    alreadyRead: false,
+    author: "Stephen King",
+  }    
 ]);
 
 function addBook(newBook) {
