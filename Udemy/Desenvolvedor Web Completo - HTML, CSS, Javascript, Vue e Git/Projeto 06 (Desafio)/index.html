@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        
+        <title>Lista de tarefas</title>
+
+    </head>
+
+    <body>
+
+        <main class="main-container" id="todoApp">
+
+            <h2>Lista de Tarefas</h2>
+            <h3 v-if="listaDeTarefas.length<=0">Adicione tarefas a sua lista de tarefas.</h3>
+            <div v-for="tarefa in listaDeTarefas" @click="tarefa.realizada=!tarefa.realizada">            
+                <h3 class="tarefas" :class="{ tarefaRealizada: tarefa.realizada }">{{ tarefa.texto }}</h3>
+            </div>
+            <button class="btnclear" @click="clearAll()">Limpar tudo</button>
+            <div class="inputfield">
+                <input class="inAdd" type="text" size="25" placeholder="Adicione uma nova tarefa..." v-model="novaTarefa.texto">
+                <button class="btnAdd" @click="addTask()">Adicionar</button>
+            </div>
+            <div class="instructions">
+                <p>Instruções</p>
+                <ul>
+                    <li>Clique no texto da tarefa para alterar entre feita / não feita;</li>
+                    <li>Use o botão "Limpar tudo" para remover todas as tarefas;</li>
+                    <li>Use o input para adicionar novas tarefas.</li>
+                </ul>
+            </div>
+                            
+        </main>
+          
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="script.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,112 @@
+body{
+    width: 500px;
+    margin: 25px auto;
+    font-family: 'Nunito', sans-serif;
+    color: #4e4e4e;
+}
+
+.main-container {
+    border: solid 1px;
+    border-radius: 5px;
+    border-color: #cccccc;
+    padding: 50px;
+    background-color: #f7f7f7;
+}
+
+h2 {
+    margin: 0 0 30px 0;
+    text-align: center;
+    font-size: 15pt;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h3 {
+    margin: 15px 0;
+    text-align: center;
+    font-size: 13pt;
+    font-weight: 500;
+}
+
+.btnclear {
+    display: block;
+    margin: 25px auto;
+    padding: 10px 15px;
+    color: #f7f7f7;
+    background-color: rgb(215, 90, 90);
+    border: none;
+    border-radius: 5px;
+    font-size: 9pt;
+    font-weight: 500;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+}
+
+.tarefas {
+    cursor: pointer;
+    color: #4e4e4e;
+}
+
+.tarefaRealizada {
+    text-decoration: line-through;
+    color: #cccccc;
+}
+
+.inputfield {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    margin:0px 5px;
+}
+
+.inAdd {
+    padding: 10px;
+    border: 0.25px solid #cccccc;
+    border-radius: 5px;
+    color: #4e4e4e;
+    font-size: 11pt;
+    font-weight: 500;
+    font-family: 'Nunito', sans-serif;
+}
+
+.inAdd::placeholder {
+    color: #cccccc;
+    opacity: 1;
+}
+
+.btnAdd {
+    padding: 10px 15px;
+    color: #f7f7f7;
+    background-color: rgb(70, 145, 175);
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 9pt;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+}
+
+.instructions {
+    text-align: center;
+}
+
+.instructions p {
+    text-transform: uppercase;
+    font-size: 11pt;
+    font-weight: 700;
+    margin: 30px 0px 15px 0px;
+}
+
+.instructions ul {
+    padding-inline-start: 0;
+}
+
+.instructions li {
+    list-style-position: inside;
+    text-align: center;
+    font-size: 9pt;
+    margin: 15px 0px;
+}
