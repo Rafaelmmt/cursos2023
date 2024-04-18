@@ -1,6 +1,6 @@
 members = [
-    { fname: 'John', lname: 'Lennon', instrument: 'Violão' },
-    { fname: 'George', lname: 'Harrison', instrument: 'Guitarra' },
+    { fname: 'Serj', lname: 'Tankian', instrument: 'Vocal' },
+    { fname: 'Daron', lname: 'Malakian', instrument: 'Guitarra' },
 ]
 
 const handlingForms = {

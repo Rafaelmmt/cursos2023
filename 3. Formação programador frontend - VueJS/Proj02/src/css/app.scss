@@ -1,0 +1,19 @@
+// app global css in SCSS form
+.q-page{
+  max-width: 390px;
+  margin: auto;
+}
+.container-top {
+  max-width: 390px;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  background-color: #FAFAFA;
+}
+.container-bottom {
+  max-width: 390px;
+  z-index: 1000;
+  position: fixed;
+  bottom: 0;
+  background-color: #FAFAFA;
+}
